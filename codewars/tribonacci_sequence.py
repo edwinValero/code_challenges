@@ -6,7 +6,7 @@ def tribonacci(signature, n):
     if n <= len_signature: # must always be 3
         return signature[:n]
     
-    for i in range(len_signature, n):
+    for _ in range(len_signature, n):
         actual = sum(signature[-len_signature:])
         signature.append(actual)
     return signature
